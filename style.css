@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f5f7;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 头部导航栏 */
+.header {
+  margin: 30px auto;
+  height: 42px;
+}
+
+.logo {
+  float: left;
+  width: 196px;
+  height: 42px;
+}
+
+.nav {
+  float: left;
+  margin-left: 60px;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 10px;
+  margin: 0 15px;
+  color: #050505;
+  font-size: 18px;
+}
+
+.nav ul li a:hover {
+  color: #02a7fa;
+  border-bottom: 2px solid #02a7fa;
+}
+/* search搜索栏 */
+.search {
+  float: left;
+  width: 412px;
+  margin-left: 50px;
+}
+
+.search input {
+  /* 加左浮动是因为两个行内块元素（button元素）之间会存在缝隙 */
+  float: left;
+  /* 因为要减去上下边框的像素 */
+  height: 40px;
+  /* 从360px像素减至345像素，因为padding会撑开盒子15厘米，所以需要把盒子宽度减少15厘米以维持原本的宽度 */
+  width: 345px;
+  padding-left: 15px;
+  border: 1px solid #02a7fa;
+  border-right: 0;
+  color: #999999;
+  font-size: 12px;
+}
+
+.search button {
+  /* 加左浮动是因为两个行内块元素之间会存在缝隙 */
+  float: left;
+  width: 50px;
+  height: 42px;
+  border: 0;
+  background: url(images/fa-search.png);
+}
+
+/* user用户头像 */
+.user {
+  float: right;
+  vertical-align: middle;
+  color: #999999;
+  font-size: 14px;
+}
+
+/* banner部分 */
+.banner {
+  height: 420px;
+  background-color: #1c036c;
+}
+
+.banner .w {
+  height: 420px;
+  background-color: pink;
+  background: url(images/banner2.png) no-repeat top center;
+}
+/* subnav侧边导航栏 */
+.banner .w .subnav {
+  float: left;
+  width: 192px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+  padding: 0 22px;
+}
+
+.subnav ul li a {
+  height: 45px;
+  line-height: 45px;
+
+  color: white;
+  font-size: 14px;
+}
+
+.subnav ul li a span {
+  float: right;
+}
+/* .course课程表 */
+.course {
+  float: right;
+  margin-top: 50px;
+  width: 230px;
+  height: 300px;
+  background-color: #ffffff;
+}
+
+.course .hd {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #9bceea;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.course .bd ul {
+  width: 191px;
+  padding: 0 18px;
+}
+
+.course .bd ul li {
+  height: 51px;
+  margin-top: 16px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.course .bd ul li h4 {
+  color: #4e4e4e;
+  font-size: 16px;
+}
+
+.course .bd ul li p {
+  color: #a5a5a5;
+  font-size: 12px;
+}
+
+.course .bd ul a {
+  display: block;
+  margin-top: 6px;
+  height: 38px;
+  line-height: 40px;
+  text-align: center;
+  color: #02a7fa;
+  font-weight: 700;
+  border: 1px solid #02a7fa;
+}
+
+/* goods精品小模块 */
+.goods {
+  height: 60px;
+  line-height: 60px;
+  margin-top: 8px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.goods ul {
+  margin-left: 35px;
+}
+
+.goods ul li {
+  float: left;
+}
+
+.goods ul li h4 {
+  color: #00a4ff;
+  font-weight: normal;
+}
+
+.goods ul li a {
+  color: #050505;
+}
+
+.goods ul li span {
+  padding: 0 33px;
+  color: #d4d4d4;
+}
+
+.goods ul li #lastone {
+  padding-left: 250px;
+  color: #00a4ff;
+  font-size: 14px;
+}
+
+/* 精品推荐大模块 */
+.box {
+  margin-top: 35px;
+  height: 597px;
+}
+
+.box .box-hd {
+  height: 42px;
+}
+
+.box .box-hd h4 {
+  float: left;
+  color: #494949;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.box .box-hd a {
+  float: right;
+  padding: 5px 30px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.box .box-bd ul {
+  width: 1220px;
+}
+
+.box .box-bd ul li {
+  position: relative;
+  float: left;
+  width: 229px;
+  height: 271px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.box-bd ul li img {
+  height: 155px;
+  width: 229px;
+}
+
+.box .box-bd ul li .info {
+  padding: 20px 20px 28px 24px;
+}
+
+.box .box-bd ul li .info h4 {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #050505;
+}
+
+.box .box-bd ul li .info span {
+  color: #ff7c2d;
+  font-size: 12px;
+}
+.box .box-bd ul li .info {
+  color: #999999;
+  font-size: 12px;
+}
+
+.box .box-bd ul li .hot-tag {
+  position: absolute;
+  right: -4px;
+  width: 40px;
+  height: 24px;
+}
+
+/* rumen编程入门模块 */
+.rumen {
+  height: 434px;
+  margin-top: 38px;
+}
+/* rumen-header */
+.rumen .rumen-hd {
+  height: 42px;
+}
+
+.rumen .rumen-hd h4 {
+  float: left;
+  font-weight: normal;
+  font-size: 20px;
+  color: #494949;
+}
+
+.rumen .rumen-hd ul {
+  padding-left: 400px;
+}
+
+.rumen .rumen-hd ul li {
+  float: left;
+  padding: 4px 24px;
+}
+
+.rumen .rumen-hd ul li #fristone {
+  color: #00a4ff;
+}
+.rumen .rumen-hd ul li a {
+  font-size: 16px;
+  color: #868686;
+}
+
+.rumen .rumen-hd a {
+  float: right;
+  padding-right: 32px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+/* rumen-body */
+.left {
+  float: left;
+  width: 229px;
+  height: 392px;
+}
+
+.top-r {
+  float: right;
+  width: 954px;
+  height: 100px;
+  margin-left: 12px;
+}
+
+.rumen .rumen-bd ul li {
+  float: right;
+  width: 227px;
+  height: 270px;
+  margin-left: 15px;
+  margin-top: 23px;
+  background-color: #fff;
+}
+
+.rumen .rumen-bd ul li img {
+  width: 228px;
+  height: 155px;
+}
+
+.rumen-bd ul li div {
+  padding: 15px 21px 27px 23px;
+}
+
+.rumen .rumen-bd ul li span {
+  font-size: 12px;
+  color: #999999;
+}
+
+.rumen-bd ul li h4 {
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #050505;
+}
+.rumen-bd ul li .rumen-info {
+  color: #999999;
+  font-size: 12px;
+}
+.rumen-bd ul li .rumen-info span {
+  color: #ff7c2d;
+}
+
+/* data数据分析师模块 */
+.data {
+  height: 434px;
+}
+/* data-hd头部 */
+.data .data-hd {
+  height: 42px;
+  margin-top: 38px;
+}
+
+.data .data-hd h4 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+  font-weight: normal;
+}
+
+.data .data-hd ul {
+  margin-left: 390px;
+}
+
+.data .data-hd ul li {
+  float: left;
+  padding: 4px 38px;
+}
+
+.data .data-hd ul li a {
+  font-size: 16px;
+  color: #868686;
+}
+
+.data .data-hd ul #data-fristone {
+  color: #00a4ff;
+}
+
+.data .data-hd a {
+  float: right;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+/* data-bd身体 */
+.data-bd .data-left {
+  float: left;
+}
+.data-bd .data-top {
+  float: right;
+  width: 959px;
+  height: 100px;
+}
+
+.data-bd ul li {
+  float: right;
+  width: 228px;
+  height: 269px;
+  background-color: #fff;
+}
+
+.data-bd ul li {
+  margin-top: 23px;
+  margin-left: 14px;
+}
+
+.data-bd ul li img {
+  width: 228px;
+  height: 154px;
+}
+
+.data-bd ul li h4 {
+  padding-bottom: 20px;
+  color: #050505;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.data-bd ul li .data-info {
+  padding: 23px 20px 28px 27px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.data-bd ul li .data-info span {
+  color: #ff7c2d;
+}
+
+/* footer底部 */
+.footer {
+  height: 417px;
+  margin-top: 40px;
+  background-color: #fffeff;
+}
+
+.footer .w .copyright {
+  float: left;
+  width: 472px;
+  height: 210px;
+  padding: 0 22px;
+}
+
+.copyright img {
+  margin-top: 33px;
+  margin-bottom: 24px;
+}
+
+.footer .w .copyright footer {
+  color: #666666;
+  font-size: 12px;
+}
+
+.footer .w .copyright a {
+  display: block;
+  margin-top: 18px;
+  width: 118px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid #07abf5;
+  color: #07abf5;
+}
+
+.footer .w .links {
+  float: right;
+  width: 555px;
+  height: 163px;
+  margin-top: 33px;
+  margin-right: 32px;
+}
+
+.footer .w .links ul {
+  float: right;
+  margin-left: 100px;
+}
+
+.footer .w .links ul h4 {
+  font-weight: normal;
+  color: #333333;
+  font-size: 16px;
+}
+
+.footer .w .links ul li a {
+  color: #333333;
+  font-size: 12px;
+}
